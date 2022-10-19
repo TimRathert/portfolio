@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import LinkedInLogo from '../public/LI.png'
-import GitHubLogo from '../public/github.svg'
 import Footer from '../components/Footer' 
 import Navbar from '../components/Navbar'
-import { useParalax } from 'react-scroll-parallax'
+import { useParalax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
 import React, { useRef } from 'react'
 
 export default function Home() {
@@ -19,16 +17,52 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hello World
-        </h1>
+      <ParallaxBanner
+        strength={800}
+        layers={[
+          {       
+            children: 
+            <figure className={'circle z-1 bg-gradient-radial from-color1 to-white aspect-square h-2/5 rounded-full shadow-[5px_5px_10px_rgba(255,255,255,0.2)]'}></figure>,
+            expanded: false,
+            speed: -35,
+            scale: [1.4, 1],
+            opacity: [2, 0.1], 
+            translateY:[-80,80],
+            translateX:[80,40],
+          },
+          {
+            children: <div className={`text-2xl text-center mt-18 z-2`}>Hello World</div>,
+            expanded: false,
+            speed: -25,
+            scale: [1, 1.2],
+            opacity: [1.2, 0.3], 
+          },
+          {       
+            children: <Image src="/mountains.png" width='100%' height='100%' layout='fill' className={'z-10 mt-24'}/>,
+            expanded: false,
+            speed: -10,
+            scale: [1, 1.4],
+            opacity: [2, 1], 
+          },
+          
+          {
+            opacity: [0, 0.9],
+            shouldAlwaysCompleteAnimation: true,
+            expanded: false,
+            children: (
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-blue-900" />
+            ),
+          }
+        ]}
+      className="aspect-[2/1]"
+      />
 
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <div className={styles.grid}>
+        <div className={`${styles.grid}  h-72 my-72 `}>
 
         </div>
       </main>

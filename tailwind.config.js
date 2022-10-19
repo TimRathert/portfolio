@@ -7,12 +7,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-       color1: '#FF6978',  
-       color2: '#FFFCF9',
-       color3: '#B1EDE8',
-       color4: '#8F98A1',
-       color5: '#6D435A',
-       color6: '#352D39',  
+        color1: '#FF6978',  
+        color2: '#FFFCF9',
+        color3: '#B1EDE8',
+        color4: '#8F98A1',
+        color5: '#6D435A',
+        color6: '#352D39',
+        gradient2: '#bd5762',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle at 100px 100px, #FF6978, #000)',
       },
     },
   },
