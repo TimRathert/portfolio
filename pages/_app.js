@@ -1,11 +1,11 @@
 import '../styles/globals.css'
-import { ParallaxProvidxer } from 'react-scroll-parallax'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ParallaxProvidxer scrollAxis='vertical'>
+    <ParallaxProvider scrollAxis='vertical'>
       <Component {...pageProps} />
-    </ParallaxProvidxer>
+    </ParallaxProvider>
   )
 }
 
