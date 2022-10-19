@@ -5,7 +5,7 @@ import { Menu, Transition } from '@headlessui/react'
 
 function Navbar() {  
   return (
-    <div className= {`${styles.Navbar} z-6 border-b-2 border-color1/60 h-12 bg-color2 text-color6 flex flex-row justify-between `}>
+    <div className= {`${styles.Navbar} z-50 border-b-2 border-color1/60 h-12 bg-color2 text-color6 flex flex-row justify-between `}>
         <div className={`self-center p-8 font-medium`}>
             Tim Rathert
         </div>
@@ -26,8 +26,9 @@ function Navbar() {
                     leave="transition duration-150 ease-out"
                     leaveFrom="transform scale-100 opacity-100"
                     leaveTo="transform scale-95 opacity-0"
+                    className={`z-10`}
                     >
-                <Menu.Items static className={`absolute bg-color2 right-0 origin-top-right p-2 rounded-lg flex flex-col w-56 shadow-inner shadow-color1`}>
+                <Menu.Items static className={`z-50 absolute bg-color2 right-0 origin-top-right p-2 rounded-lg flex flex-col w-56 shadow-inner shadow-color1`}>
                     
                     <div className={`p-2 rounded-lg`}>
                         <Menu.Item>

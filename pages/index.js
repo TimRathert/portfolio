@@ -37,14 +37,6 @@ export default function Home() {
             rotateX:[30,-0],
             
           },
-          {
-            children: <div className={`text-5xl text-center motion-safe:animate-pulse `}>Hello World</div>,
-            expanded: false,
-            speed: 20,
-            scale: [1, .6],
-            opacity: [2, 0.3],
-            translateY:[-20,30],
-          },
           {       
             children: <Image src="/mountains.png" width='100%' height='100%' layout='fill' className={'mt-24'}/>,
             expanded: false,
@@ -52,7 +44,14 @@ export default function Home() {
             scale: [1, 1.4],
             opacity: [2, 1], 
           },
-          
+          {
+            children: <div className={`text-5xl text-center motion-safe:animate-pulse `}>Hello World</div>,
+            expanded: false,
+            speed: 30,
+            scale: [.6, 1.4],
+            opacity: [1, .1],
+            translateY:[65,105],
+          },
           {
             /* opacity layer */
             opacity: [-0.2, 1],
@@ -63,7 +62,7 @@ export default function Home() {
             ),
           }
         ]}
-      className="aspect-[2/1]"
+      className="aspect-[2/1] z-0 opacity-95"
       />
 
         <p className={styles.description}>
