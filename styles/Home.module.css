@@ -16,7 +16,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #B1EDE8;
   justify-content: center;
   align-items: center;
 }
@@ -118,10 +118,10 @@
 @media (prefers-color-scheme: dark) {
   .card,
   .footer {
-    border-color: #222;
+    border-color: #6D435A;
   }
   .code {
-    background: #111;
+    background: #6D435A;
   }
   .logo img {
     filter: invert(1);
