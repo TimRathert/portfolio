@@ -6,20 +6,22 @@ import GitHubLogo from '../public/github.svg'
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} bg-color1`}>
         <a
           href="https://www.linkedin.com/in/tim-rathert/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={LinkedInLogo} width='50px' height='50px' alt='LinkedIn Link' />
+          <Image className='drop-shadow-2xl transition-all hover:bg-color1/30 p-8 m-8 rounded-lg' 
+            src={LinkedInLogo} width='50px' height='50px' alt='LinkedIn Link' />
         </a>
         <a
           href="https://github.com/TimRathert"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={GitHubLogo} width='50px' height='50px' alt='LinkedIn Link' />
+          <Image className='drop-shadow-2xl transition-all hover:bg-color1/30 p-8 m-8 rounded-lg'
+            src={GitHubLogo} width='50px' height='50px' alt='LinkedIn Link' />
         </a>
     </footer>
   )
