@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className={`lg:w-5/6 lg:self-center`}>
+      <main className={`lg:w-2/3 lg:self-center`}>
       <ParallaxBanner
         strength={800}
         layers={[
@@ -25,7 +25,7 @@ export default function Home() {
           },
           {       
             children: 
-            <figure className={'z-1 bg-gradient-radial from-color1 to-white aspect-square h-2/5 rounded-full shadow-[5px_5px_10px_rgba(255,255,255,0.2)] before:bg-gradient-radial3 before:blur-lg '}>
+            <figure className={'bg-gradient-radial from-color1 to-white aspect-square h-2/5 rounded-full shadow-[5px_5px_10px_rgba(255,255,255,0.2)] before:bg-gradient-radial3 before:blur-lg '}>
               <span className={`bg-gradient-radial2 absolute`}></span>
             </figure>,
             expanded: false,
@@ -38,14 +38,15 @@ export default function Home() {
             
           },
           {
-            children: <div className={`text-2xl text-center mt-18 z-2`}>Hello World</div>,
+            children: <div className={`text-5xl text-center motion-safe:animate-pulse `}>Hello World</div>,
             expanded: false,
-            speed: -25,
-            scale: [1, 1.2],
-            opacity: [1.2, 0.3], 
+            speed: 20,
+            scale: [1, .6],
+            opacity: [2, 0.3],
+            translateY:[-20,30],
           },
           {       
-            children: <Image src="/mountains.png" width='100%' height='100%' layout='fill' className={'z-10 mt-24'}/>,
+            children: <Image src="/mountains.png" width='100%' height='100%' layout='fill' className={'mt-24'}/>,
             expanded: false,
             speed: -10,
             scale: [1, 1.4],
@@ -53,7 +54,8 @@ export default function Home() {
           },
           
           {
-            opacity: [0, 0.9],
+            /* opacity layer */
+            opacity: [-0.2, 1],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
             children: (

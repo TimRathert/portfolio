@@ -5,7 +5,7 @@ import { Menu, Transition } from '@headlessui/react'
 
 function Navbar() {  
   return (
-    <div className= {`${styles.Navbar} border-b-2 border-color1/60 h-12 bg-color2 text-color6 flex flex-row justify-between `}>
+    <div className= {`${styles.Navbar} z-6 border-b-2 border-color1/60 h-12 bg-color2 text-color6 flex flex-row justify-between `}>
         <div className={`self-center p-8 font-medium`}>
             Tim Rathert
         </div>
