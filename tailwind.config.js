@@ -16,7 +16,9 @@ module.exports = {
         gradient2: '#bd5762',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(circle at 100px 100px, #FF6978, #000)',
+        'gradient-radial': 'radial-gradient(circle at 33% 33%, #FF6978, #404040)',
+        'gradient-radial2': 'radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%)',
+        'gradient-radial3': 'radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%)',
       },
     },
   },
