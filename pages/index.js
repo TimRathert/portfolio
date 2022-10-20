@@ -5,6 +5,8 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import { ParallaxBanner, ParallaxBannerLayer, Parallax } from 'react-scroll-parallax'
 import React, { useRef, useState } from 'react'
+import InfoCard from '../components/InfoCard'
+import Skills from '../components/Skills'
 
 export default function Home() {
   const target = useRef()
@@ -29,26 +31,26 @@ export default function Home() {
           // {
           //   children: <figure className = {`bg-color6 w-full h-screen`}></figure>
           // },
-          // {       
-          //   children: 
-          //   <figure className={'bg-gradient-radial from-color1 to-white aspect-square h-2/5 rounded-full shadow-[5px_5px_10px_rgba(255,255,255,0.2)] before:bg-gradient-radial3 before:blur-lg '}>
-          //     <span className={`bg-gradient-radial2 absolute`}></span>
-          //   </figure>,
-          //   expanded: false,
-          //   speed: -35,
-          //   scale: [1.4, 1],
-          //   opacity: [2, 0.1], 
-          //   translateY:[-80,80],
-          //   translateX:[80,40],
-          //   rotateX:[30,-0],
-            
-          // },
+
           {       
             children: 
             <Image src='/sky.jpg' width='100%' height='100%' layout='fill' className={'sepia-[30%]'}/>,
             expanded: false,
             speed: -20,
-
+          },
+          {       
+            children: 
+            <figure className={'bg-gradient-radial sepia-[40%] from-color1 to-white aspect-square h-2/5 rounded-full shadow-[5px_5px_10px_rgba(255,255,255,0.2)] before:bg-gradient-radial3 before:blur-lg '}>
+              <span className={`bg-gradient-radial2 absolute`}></span>
+            </figure>,
+            expanded: false,
+            speed: -35,
+            scale: [1.4, 1],
+            opacity: [3, 0.1], 
+            translateY:[-80,80],
+            translateX:[80,40],
+            rotateX:[30,-0],
+            
           },
           {       
             children: <Image src="/mountains.png" width='100%' height='100%' layout='fill' className={'mt-24'}/>,
@@ -129,21 +131,19 @@ export default function Home() {
           </div>
       </Parallax>
 
-      <div ref={infoDiv} className={`h-fit w-full lg:mx-0 mt-32 mb-[400px] flex flex-row rounded-2xl bg-color4 shadow-[2px_2px_5px_rgba(0,0,0,0.2)]`}>
-        <Image src='/me.jpg'height={`400px`} width={`400px`} className={`rounded-full shadow-[2px_2px_4px_rgba(0,0,0,0.3)]`}/>
-
-        <div className='col-start-2 flex-col place-content-center'>
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
-        </div>
-
+      <InfoCard infoDiv = {infoDiv}/>
         <Parallax
           speed={25}
           translateY={['100px','0px']}>
         </Parallax>
-      </div>
-
+      
+      <Parallax
+        targetElement={infoDiv.current}
+        speed={-5}
+        scale={[0,1]}
+        >
+          <Skills />
+      </Parallax>
 
 
 
