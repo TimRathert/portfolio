@@ -45,6 +45,14 @@ export default function Home() {
             opacity: [2, 1], 
           },
           {
+            children: <div className={`text-color1/50 text-5xl text-center -skew-x-12 -scale-y-100 scale-y-50 opacity-5 motion-safe:animate-pulse`}>Hello World</div>,
+            expanded: false,
+            speed: 30,
+            scale: [.6, 1.4],
+            opacity: [1, .1],
+            translateY:[85,105],
+          },
+          {
             children: <div className={`text-5xl text-center motion-safe:animate-pulse `}>Hello World</div>,
             expanded: false,
             speed: 30,
