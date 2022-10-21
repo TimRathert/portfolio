@@ -24,7 +24,7 @@ export default function Home() {
       <Navbar />
       <main className={`lg:w-2/3 lg:self-center`}>
       <ParallaxBanner
-        className="aspect-[2/1] h-[32rem] mb-32 "
+        className="aspect-[2/1] h-[40rem] mb-32 "
         strength={800}
         ref = {mainBanner}
         layers={[
