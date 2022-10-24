@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Footer from '../components/Footer' 
 import Navbar from '../components/Navbar'
-import { ParallaxBanner, ParallaxBannerLayer, Parallax } from 'react-scroll-parallax'
+import { Parallax } from 'react-scroll-parallax'
 import React, { useRef, useState } from 'react'
 import InfoCard from '../components/InfoCard'
 import Skills from '../components/Skills'
@@ -28,6 +28,7 @@ export default function Home() {
       <main className={`lg:w-2/3 lg:self-center`}>
       <Banner mainBanner = {mainBanner} />
       
+{/* animations for scroll */}
       <Parallax 
         targetElement={infoDiv.current} 
         onEnter={()=>{setInfoDivActive(!infoDivActive)}} 
