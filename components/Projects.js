@@ -3,9 +3,17 @@ import ProjectList from  '../ProjectList.js'
 import ProjectCard from './ProjectCard.js'
 
 function Projects() {
-    const projCardRender = ProjectList.map((item, index) => {    
+    const projCardRender = ProjectList.map((item, index) => {
+        let visVarLeft = true
+        let visVarRight = true
+        if (index === 1){
+            let visVarLeft = false
+        }
+        if (index === ProjectList.length-1){
+            let visVarRight = false
+        }    
         return (
-            <ProjectCard project = { item } />
+            <ProjectCard project = { item } visVarLeft = {visVarLeft} visVarRight = {visVarRight} />
         )
     })
     return (

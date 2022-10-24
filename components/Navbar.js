@@ -35,8 +35,10 @@ function Navbar() {
                             {({ active }) => (
                                 <a
                                 className={`${active ? 'bg-color1/60' : 'bg-color1/3'} p-2 rounded-lg`}
-                                    href="/account-settings"
-                                > Account settings
+                                    href="https://drive.google.com/file/d/1Hw41F5t3CAHdpt4XkgnI2O1kSspMSFGY/view?usp=sharing"
+                                    target='_blank'
+                                    rel='noreferrer'
+                                > Tim's Resume
                                 </a>
                             )}
                         </Menu.Item>
@@ -45,6 +47,8 @@ function Navbar() {
                                 <a
                                     className={`${active ? 'bg-color1/60' : 'bg-color1/0'} p-2 rounded-lg`}
                                     href="/account-settings"
+                                    target='_blank'
+                                    rel='noreferrer'
                                 > Documentation
                                 </a>
                             )}
