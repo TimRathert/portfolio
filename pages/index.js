@@ -7,6 +7,7 @@ import { ParallaxBanner, ParallaxBannerLayer, Parallax } from 'react-scroll-para
 import React, { useRef, useState } from 'react'
 import InfoCard from '../components/InfoCard'
 import Skills from '../components/Skills'
+import Projects from '../components/Projects'
 
 export default function Home() {
   const target = useRef()
