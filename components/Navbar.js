@@ -51,7 +51,7 @@ function Navbar() {
                                     href="/account-settings"
                                     activeClass="active" to="project-container" 
                                     spy={true} delay={200} isDynamic={true} smooth={true} offset={50} duration={900} 
-                                > Documentation
+                                > Jump to Projects
                                 </Link>
                             )}
                         </Menu.Item>
