@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { Menu, Transition } from '@headlessui/react'
+import * as Scroll from 'react-scroll'
+
 
 function Navbar() {  
+    let Link = Scroll.Link
   return (
     <div className= {`${styles.Navbar} z-50 border-b-2 border-color1/60 h-12 bg-color2 text-color6 flex flex-row justify-between `}>
         <div className={`self-center p-8 font-medium`}>
@@ -44,13 +46,13 @@ function Navbar() {
                         </Menu.Item>
                         <Menu.Item  as='div'>
                             {({ active }) => (
-                                <a
+                                <Link
                                     className={`${active ? 'bg-color1/60' : 'bg-color1/0'} p-2 rounded-lg`}
                                     href="/account-settings"
-                                    target='_blank'
-                                    rel='noreferrer'
+                                    activeClass="active" to="project-container" 
+                                    spy={true} delay={200} isDynamic={true} smooth={true} offset={50} duration={900} 
                                 > Documentation
-                                </a>
+                                </Link>
                             )}
                         </Menu.Item>
                     </div>

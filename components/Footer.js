@@ -12,7 +12,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image className='drop-shadow-2xl transition-all hover:bg-color2/30 p-8 m-8 rounded-lg' 
+          <Image className='drop-shadow-2xl transition-all hover:bg-color2/40 p-8 m-8 rounded-lg' 
             src={LinkedInLogo} width='50px' height='50px' alt='LinkedIn Link' />
         </a>
         <a
@@ -20,7 +20,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image className='drop-shadow-2xl transition-all hover:bg-color2/30 p-8 rounded-lg'
+          <Image className='drop-shadow-2xl transition-all hover:bg-color2/40 p-8 rounded-lg'
             src={GitHubLogo} width='50px' height='50px' alt='LinkedIn Link' />
         </a>
     </footer>
