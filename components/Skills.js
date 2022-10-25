@@ -1,6 +1,7 @@
 import React, {useState, useRef} from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import Image from 'next/image'
+
 function Skills(props) {
   const [isOnScreen, setIsOnScreen] = useState(false)
 
@@ -13,7 +14,7 @@ function Skills(props) {
       </Parallax>
       <div className='flex self-center mb-2 text-2xl'>Skills</div>
       <div className='flex justify-around p-4 w-full'>
-        <ul className={`transition-all ease-in w-2/6 duration-300 ${isOnScreen ? 'opacity-100' : 'opacity-30'}`}>
+        {/* <ul className={`transition-all ease-in w-2/6 duration-300 ${isOnScreen ? 'opacity-100' : 'opacity-30'}`}>
           <li>Python</li>
           <li>React.js</li>
           <li>Node.js</li>
@@ -50,7 +51,10 @@ function Skills(props) {
           <li></li>
           <li></li>
           
-        </ul>
+        </ul> */}
+
+        <i className="devicon-python-plain-wordmark"></i>
+          
       </div>
 
     </div>

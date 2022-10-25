@@ -41,7 +41,7 @@ function Banner(props) {
             opacity: [2, 1], 
           },
           {
-            children: <div className={`text-color1/50 text-5xl text-center -skew-x-12 -scale-y-100 scale-y-50 opacity-5 motion-safe:animate-pulse`}>Hello World</div>,
+            children: <div className={`text-color1/50 text-5xl text-center -skew-x-12 -scale-y-100 opacity-5 motion-safe:animate-pulse`}>Hello World</div>,
             expanded: false,
             speed: 30,
             scale: [.6, 1.4],
