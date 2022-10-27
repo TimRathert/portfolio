@@ -81,8 +81,12 @@ function Skills(props) {
           <p className={`m-1 p-1 bg-color6/80 rounded-md hover:bg-color5/80 transition-colors text-color2 shadow-[2px_2px_5px_rgba(0,0,0,0.2)]`}>Tailwind CSS</p>
           <p className={`m-1 p-1 bg-color6/80 rounded-md hover:bg-color5/80 transition-colors text-color2 shadow-[2px_2px_5px_rgba(0,0,0,0.2)]`}>HeadlessUI</p>
         </div>
+        <div className={` ${ enabled ? 'h-fit opacity-100' : 'h-0 opacity-0'} text-color6 w-full flex flex-row-reverse flex-wrap gap-4 transition-all ease-in duration-700 overflow-hidden`}>
+       <a href='https://leetcode.com/DiscoBloodbath/' target='_blank' rel='noreferrer'>Tim&apos;s Leetcode profile</a>
+        </div>
     </div>
   )
 }
 
 export default Skills
+
