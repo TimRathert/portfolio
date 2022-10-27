@@ -55,6 +55,17 @@ function Navbar() {
                                 </Link>
                             )}
                         </Menu.Item>
+                        <Menu.Item  as='div'>
+                            {({ active }) => (
+                                <Link
+                                    className={`${active ? 'bg-color1/60' : 'bg-color1/0'} p-2 rounded-lg`}
+                                    href="/account-settings"
+                                    activeClass="active" to="footer" 
+                                    spy={true} delay={200} isDynamic={true} smooth={true} offset={50} duration={900} 
+                                > Jump to Links
+                                </Link>
+                            )}
+                        </Menu.Item>
                     </div>
                 </Menu.Items>
                 </Transition>

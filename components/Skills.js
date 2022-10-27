@@ -36,13 +36,13 @@ function Skills(props) {
         <DevIcon icon="apple" className={`w-20`} />
       </div>
       <span className='flex flex-row justify-center'>
-      <span className="mr-2">See More</span>
+      <span className="mr-2 self-center">See More</span>
       <Switch
       checked={enabled}
       onChange={setEnabled}
       className={`${
         enabled ? 'bg-color6' : 'bg-color4'
-      } relative inline-flex h-9 w-14 items-center rounded-full`}
+      } relative inline-flex h-9 w-14 items-center rounded-full my-2`}
         >
           <span className="sr-only">Tech Skill</span>
       <span

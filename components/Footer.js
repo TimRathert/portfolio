@@ -6,7 +6,7 @@ import GitHubLogo from '../public/github.svg'
 
 function Footer() {
   return (
-    <footer className={`${styles.footer} bg-color2 border-t-2 border-color1/60`}>
+    <footer id="footer" className={`${styles.footer} bg-color2 border-t-2 border-color1/60`}>
         <a
           href="https://www.linkedin.com/in/tim-rathert/"
           target="_blank"

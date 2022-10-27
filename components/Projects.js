@@ -14,7 +14,7 @@ function Projects() {
             visVarRight = false
         }
         return (
-            <ProjectCard project = { item } index = { index } visVarLeft = {visVarLeft} visVarRight = {visVarRight} />
+            <ProjectCard key = { index } project = { item } index = { index } visVarLeft = {visVarLeft} visVarRight = {visVarRight} />
         )
     })
     return (
