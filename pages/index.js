@@ -79,6 +79,7 @@ export default function Home() {
           translateY={['100px','0px']}>
         </Parallax>
       
+
       <Parallax
         targetElement={infoDiv.current}
         speed={-5}

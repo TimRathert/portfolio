@@ -1,20 +1,11 @@
 import React from 'react'
 import ProjectList from  '../ProjectList.js'
 import ProjectCard from './ProjectCard.js'
-import Image from 'next/image'
 
 function Projects() {
     const projCardRender = ProjectList.map((item, index) => {
-        let visVarLeft = true
-        let visVarRight = true
-        if (index === 1){
-            visVarLeft = false
-        }
-        if (index === ProjectList.length-1){
-            visVarRight = false
-        }
         return (
-            <ProjectCard key = { index } project = { item } index = { index } visVarLeft = {visVarLeft} visVarRight = {visVarRight} />
+            <ProjectCard key = { index } project = { item } index = { index } />
         )
     })
     return (

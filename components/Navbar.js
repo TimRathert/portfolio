@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from '../styles/Home.module.css'
 import { Menu, Transition } from '@headlessui/react'
 import * as Scroll from 'react-scroll'
@@ -40,7 +40,7 @@ function Navbar() {
                                     href="https://drive.google.com/file/d/1Hw41F5t3CAHdpt4XkgnI2O1kSspMSFGY/view?usp=sharing"
                                     target='_blank'
                                     rel='noreferrer'
-                                > Tim's Resume
+                                > Tim&apos;s Resume
                                 </a>
                             )}
                         </Menu.Item>

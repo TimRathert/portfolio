@@ -15,7 +15,7 @@ function Banner(props) {
 
           {       
             children: 
-            <Image src='/sky.jpg' width='100%' height='100%' layout='fill' className={'sepia-[30%]'}/>,
+            <Image src='/sky.jpg' width='100%' height='100%' layout='fill' className={'sepia-[30%]'} alt='Sunset Sky'/>,
             expanded: false,
             speed: -20,
           },
@@ -34,9 +34,9 @@ function Banner(props) {
             
           },
           {       
-            children: <Image src="/mountains.png" width='100%' height='100%' layout='fill' className={'mt-24'}/>,
+            children: <Image src="/mountains.png" width='100%' height='100%' layout='fill' className={'mt-24'} alt='Mountains'/>,
             expanded: false,
-            speed: -10,
+            speed: -5,
             scale: [1, 1.4],
             opacity: [2, 1], 
           },
