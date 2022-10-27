@@ -9,7 +9,7 @@ function InfoCard(props) {
 
       <div className='text-color6 bg-fixed bg-containerbg w-full rounded-xl p-2 m-1 flex-col place-content-center sepia-[50%]'>
         <div className={`text-white text-3xl select-none`}>Hello!</div>
-        <div className={`text-white text-lg mt-4 select-none`}>I&apos;m a full stack software developer with a love of learning through for problem solving. I am driven by my desire to understand and my passion for helping others reach their maximum potential. I&apos;m a hobbyist musician and rock climber.  </div>
+        <div className={`text-white text-lg mt-4 select-none`}>I&apos;m a full stack software developer with a love of learning through problem solving. I am driven by my desire to understand and my passion for helping others reach their maximum potential. I&apos;m a hobbyist musician and rock climber.  </div>
         <div className={`text-white text-lg my-4 select-none`}>Looking for a developer? <a href='mailto:rathertt@gmail.com' type='' className='transition-all duration-[.5s] hover:bg-color1/40 p-2 rounded-lg bg-color1/20 self-end'>Email Me</a> </div>
       </div>
   </div>
