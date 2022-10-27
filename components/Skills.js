@@ -7,7 +7,7 @@ function Skills(props) {
   const [enabled, setEnabled] = useState(false)
 
   return (
-    <div id='skills' ref = { props.skillsContainer } className={`h-fit w-full lg:mx-0 p-4 mb-[200px] text-black flex flex-col rounded-2xl bg-color2/80 shadow-[2px_2px_5px_rgba(0,0,0,0.2)] transition-all duration-700`}>
+    <div id='skills' ref = { props.skillsContainer } className={`h-fit w-full lg:mx-0 p-4 mb-[200px] text-black flex flex-col rounded-2xl bg-color2/90 shadow-[2px_2px_5px_rgba(0,0,0,0.2)] transition-all duration-700`}>
 
       <div className='flex self-center mb-2 text-2xl'>Skills</div>
       <div className='flex flex-wrap justify-around p-4 w-full'>
