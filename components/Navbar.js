@@ -8,7 +8,7 @@ function Navbar() {
     let Link = Scroll.Link
   return (
     <div className= {`${styles.Navbar} z-50 border-b-2 border-color1/60 h-18 md:h-12 bg-color2 text-color6 flex flex-row justify-between `}>
-        <div className={`self-center p-8 font-medium`}>
+        <div className={`self-center p-8 font-medium select-none`}>
             Tim Rathert
         </div>
 

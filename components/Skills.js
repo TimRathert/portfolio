@@ -9,7 +9,7 @@ function Skills(props) {
   return (
     <div id='skills' ref = { props.skillsContainer } className={`h-fit w-full lg:mx-0 p-4 mb-[200px] text-black flex flex-col rounded-2xl bg-color2/90 shadow-[2px_2px_5px_rgba(0,0,0,0.2)] transition-all duration-700`}>
 
-      <div className='flex self-center mb-2 text-2xl'>Skills</div>
+      <div className='flex self-center mb-2 text-2xl select-none'>Skills</div>
       <div className='flex flex-wrap justify-around p-4 w-full'>
         <DevIcon icon="python" className={`w-20`} />
         <DevIcon icon="react" className={`w-20`} />
@@ -52,7 +52,7 @@ function Skills(props) {
       />
       </Switch>
       </span>
-       <div className={` ${ enabled ? 'h-fit opacity-100' : 'h-0 opacity-0'} text-color6 w-full flex flex-row flex-wrap gap-4 transition-all ease-in duration-700 overflow-hidden`}>
+       <div className={` ${ enabled ? 'h-fit opacity-100' : 'h-0 opacity-0'} select-none text-color6 w-full flex flex-row flex-wrap gap-4 transition-all ease-in duration-700 overflow-hidden`}>
           <p className={`m-1 p-1 bg-color6/80 rounded-md hover:bg-color5/80 transition-colors text-color2 shadow-[2px_2px_5px_rgba(0,0,0,0.2)]`}>Python</p>
           <p className={`m-1 p-1 bg-color6/80 rounded-md hover:bg-color5/80 transition-colors text-color2 shadow-[2px_2px_5px_rgba(0,0,0,0.2)]`}>React.js</p>
           <p className={`m-1 p-1 bg-color6/80 rounded-md hover:bg-color5/80 transition-colors text-color2 shadow-[2px_2px_5px_rgba(0,0,0,0.2)]`}>Node.js</p>
