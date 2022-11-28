@@ -38,7 +38,7 @@ const ProjectList = [
         "description" : "A fullstack web mock-up of Instagram's core functionality created in a collaborative sprint with 2 other developers.",
         "tech": ['MongoDB Atlas','Mongoose','Node.js','EJS','Restful Routing','Bootstrap CSS','HTML', 'CSS', 'JavaScript'],
         "image": "/project-images/homepage2.jpg",
-        "link": "https://instant-gramifictation.herokuapp.com/home",
+        "link": "https://github.com/TimRathert/Project-2",
         "github": "https://github.com/TimRathert/Project-2"
     },
 ]
