@@ -22,7 +22,7 @@ const ProjectList = [
         "description" : "A fullstack web application dedicated to brutalist architecture and the dogs who create it.",
         "tech": ['Django','Python','PostgreSQL','Bulma','jQuery','HTML', 'CSS','JavaScript'],
         "image": "/project-images/dogs.png",
-        "link": "https://desolate-taiga-01947.herokuapp.com/",
+        "link": "https://github.com/TimRathert/django-dogs",
         "github": "https://github.com/TimRathert/django-dogs"
     },
     {
